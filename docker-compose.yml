@@ -21,9 +21,7 @@ services:
           - node.hostname == node-001
     volumes:
         - /mnt/cassandra:/var/lib/cassandra 
-    networks:
-      - cluster_net
-
+ 
   ################################################################
   # The Casandra cluster 
   #   - cassandra-node2
@@ -43,5 +41,3 @@ services:
           - node.hostname == node-002
     volumes:
         - /mnt/cassandra:/var/lib/cassandra 
-    networks:
-      - cluster_net
